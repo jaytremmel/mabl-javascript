@@ -11,41 +11,20 @@
  *                              function call will not provide any results for use
  *                              in the following steps in this flow or journey.
  */
+/**
+ * Creating a data/time variable. 
+ * @param {object} - mablInputs Object containing input
+ *                   variables (mablInputs.variables.user)
+ * @param {function} callback - The callback function
+ */
 function mablJavaScriptStep(mablInputs, callback) {
+  
+  
+  // format
 
-var date_format = '12'; /* FORMAT CAN BE 12 hour (12) OR 24 hour (24)*/
-
-
-var d       = new Date();
-var hour    = d.getHours();  /* Returns the hour (from 0-23) */
-var minutes     = d.getMinutes();  /* Returns the minutes (from 0-59) */
-var currentTime  = hour;
-var ext     = '';
-
-if(date_format == '12'){
-    if(hour > 12){
-        ext = 'PM';
-        hour = (hour - 12);
-
-        if(hour < 10){
-            currentTime = "0" + hour;
-        }else if(hour == 12){
-            hour = "00";
-            ext = 'AM';
-        }
-    }
-    else if(hour < 12){
-        currentTime = ((hour < 10) ? "0" + hour : hour);
-        ext = 'AM';
-    }else if(hour == 12){
-        ext = 'PM';
-    }
-}
-
-if(minutes < 10){
-    minutes = "0" + minutes; 
-}
-
-currentTime = currentTime + ":" + minutes + ' ' + ext;
-callback(currentTime)
+  var currentDTForm = formattedDateTime.replace(",", "").replace(/:[^:]*$/,'');
+  
+  
+  // perform the callback with the result
+  callback(currentDTForm);
 }
