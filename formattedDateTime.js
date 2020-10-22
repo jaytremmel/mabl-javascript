@@ -20,14 +20,6 @@
  */
 
 function mablJavaScriptStep(mablInputs, callback) {
-    
-    // Variables for time output
-   var date_format = '12'; /* FORMAT CAN BE 12 hour (12) OR 24 hour (24)*/ 
-   var d       = new Date();
-   var hour    = d.getHours();  /* Returns the hour (from 0-23) */
-   var minutes     = d.getMinutes();  /* Returns the minutes (from 0-59) */
-   var currentTime  = hour;
-   var ext     = '';
 
     /*
      * Adds a method to all "Date" objects in this scope 

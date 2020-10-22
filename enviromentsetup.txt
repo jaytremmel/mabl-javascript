@@ -17,13 +17,12 @@ These steps need to be done prior to any automated testing on a new env or an en
 STEPS
 ---------------------
 
-1. Create a new group with the name of "Testing Group"
-    a.  Create the owner as 
-        First Name: TestOwner
-        Last Name: One<env>
-        UserName: TestOwnerOne<env>
-        DisplayName: TestOwnerOne<env>
-        email: jay+testownerone<env>@studiolabs.com
+1. Ensure a group admin exists with the following creds
+    a.  First Name: TestOwner
+        Last Name: Mabl1
+        UserName: TestOwnerMabl1
+        DisplayName: TestOwnerMabl1
+        email: jay+testownermabl@studiolabs.com
     b.  Change password via email to "****************"
 
 2. Create three practices within the group:
@@ -33,53 +32,53 @@ STEPS
 
 3. Create new users for each role.
     a.  First Name: TestAdmin
-        Last Name: Mabl
-        UserName: TestAdminMabl
-        DisplayName: TestAdminMabl
-        email: jay+testadminmabl@studiolabs.com
+        Last Name: Mabl1
+        UserName: TestAdminMabl1
+        DisplayName: TestAdminMabl1
+        email: jay+testadminmabl1@studiolabs.com
         Role: Account Admin
-    b.  First Name: TestSpecialist
-        Last Name: Mabl
-        UserName: TestSpecialistMabl
-        DisplayName: TestDentistMabl
-        email: jay+testdentistmabl<env>@studiolabs.com
-        Role: Dentist
+    b.  First Name: TestSpecialist1
+        Last Name: Mabl1
+        UserName: TestSpecialistMabl1
+        DisplayName: TestSpecialistMabl
+        email: jay+testSpecialistmabl<env>@studiolabs.com
+        Role: Specialist
     c.  First Name: TestAssistant
-        Last Name: Mabl
-        UserName: TestAssistantMabl
-        DisplayName: TestAssistantMabl
-        email: jay+testassistantmabl>@studiolabs.com
+        Last Name: Mabl1
+        UserName: TestAssistantMabl1
+        DisplayName: TestAssistantMabl1
+        email: jay+testassistantmabl1>@studiolabs.com
         Role: Assistant
     d.  First Name: TestPBO
-        Last Name: Mabl
-        UserName: TestPBOMabl
-        DisplayName: TestPBOMabl
-        email: jay+testpbomabl@studiolabs.com
+        Last Name: Mabl1
+        UserName: TestPBOMabl1
+        DisplayName: TestPBOMabl1
+        email: jay+testpbomabl1@studiolabs.com
         Role: Primary Billing Owner
     e.  First Name: TestProvider
-        Last Name: Mabl
-        UserName: TestProviderMabl
-        DisplayName: TestPBOMabl
-        email: jay+testprovidermabl@studiolabs.com
-        Role: PProvider
+        Last Name: TestAdminMabl1
+        UserName: TestProviderMabl1
+        DisplayName: TestPBOMabl1
+        email: jay+testprovidermabl1@studiolabs.com
+        Role: Provider
 
 4. Create three new patients:
     a.  First Name: Rand
         Last Name: Althor
         DOB: 01/11/1990
+        Email: jay+patientRand1@studiolabs.com
     b.  First Name: Perrin
         Last Name: Aybarra
         DOB: 09/01/1990
+        Email: jay+patientPerrin1@studiolabs.com
     c.  First Name: Mat
         Last Name: Cauthon
         DOB: 08/10/1995 
+        Email: Email: jay+patientMat1@studiolabs.com
 
 
 GOTCHAS
 ------------------------------------
-
-For the new task and new patient, the "gotoURL" command needs to be updated for any new env created.
-    - This is just until we have Filters working properly.
 
 Currently creating new users is not complete. The passwords need to be generated and chosen through email. 
     - This will be a "Phase 2" item if needed.
