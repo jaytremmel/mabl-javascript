@@ -1,0 +1,43 @@
+CONTENTS OF THIS FILE
+---------------------
+
+ * Introduction
+ * Setup
+ * Terminal Commands
+ * Current Test Plan tags
+
+
+INTRODUCTION
+---------------------
+
+Mabl test plans can be run directly in terminal and show results after completion. 
+
+
+SETUP
+---------------------
+
+In terminal run the following command (this only needs to be done once):
+    npm install -g @mablhq/mabl-cli
+
+
+TERMINAL COMMANDS
+---------------------
+
+The main smoke test that can be run anytime after deployment is:
+mabl deployments create --api-key sAtZZdUfDETTV9H558Bs7A \
+     --application-id AOpz5Etp4nVzifKPwqUKpg-a --environment-id l3Xx5FoGma4UVWTxNyuwcw-e --labels smoke --await-completion
+
+To see all available options for deployments in mabl, such as environment URL and browser overrides, run this command.
+    mabl deployments create --help
+
+
+CURRENT TEST PLAN TAGS
+---------------------
+
+smoke - smoke test plan
+admin - admin tools plan
+regression - full regression plan
+patient - add patient and change patient plan
+appointments - add apointments plan
+current - runs the current release plan
+task - runs the task plan
