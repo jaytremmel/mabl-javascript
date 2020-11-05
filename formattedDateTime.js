@@ -80,7 +80,7 @@ function mablJavaScriptStep(mablInputs, callback) {
             if(hour < 10){
                 currentTime = "0" + hour;
             }else if(hour == 12){
-                hour = "00";
+                hour = "12";
                 ext = 'AM';
             }
         }
@@ -96,7 +96,7 @@ function mablJavaScriptStep(mablInputs, callback) {
         minutes = "0" + minutes; 
     }
     
-    currentTime = currentTime + ":" + minutes + ' ' + ext;
+    currentTime = hour + ":" + minutes + ' ' + ext;
 
     let formattedDateTime = formattedDate + " " + currentTime;
 

@@ -26,9 +26,24 @@ STEPS
     b.  Change password via email to "****************"
 
 2. Create three practices within the group:
-    a. "Test Practice 1"
-    b. "Test Practice 2"
-    c. "Test Practice 3"
+    a.  Name: Dr. Shai'Tan's Dental
+        Address: 456 Shayol Ghuul Blvd
+        City: Blasted Lands
+        State: NY
+        Zip: 14120
+        Phone: 555-222-3333
+    b.  Name: Emonds's Field Dentistry
+        Address: 1 The Green Way
+        City: Emonds Field
+        State: NY
+        Zip: 14120
+        Phone: 555-977-9899
+    c.  Name: Tar Valon Dental Associates
+        Address: 123 White Tower St
+        City: Tar Valon
+        State: NY
+        Zip: 14120
+        Phone: 555-111-1111
 
 3. Create new users for each role.
     a.  First Name: TestAdmin
@@ -62,19 +77,32 @@ STEPS
         email: jay+testprovidermabl1@studiolabs.com
         Role: Provider
 
-4. Create three new patients:
+4. Create new patients:
     a.  First Name: Rand
         Last Name: Althor
-        DOB: 01/11/1990
+        DOB: 01/01/1989
         Email: jay+patientRand1@studiolabs.com
     b.  First Name: Perrin
         Last Name: Aybarra
-        DOB: 09/01/1990
+        DOB: 10/25/1987
         Email: jay+patientPerrin1@studiolabs.com
     c.  First Name: Mat
         Last Name: Cauthon
-        DOB: 08/10/1995 
+        DOB: 09/17/1990 
         Email: Email: jay+patientMat1@studiolabs.com
+    d.  First Name: Nyneave
+        Last Name: Almeara
+        DOB: 07/28*/1986 
+        Email: Email: jay+patientNyneave1@studiolabs.com
+    e.  First Name: Egwene
+        Last Name: Alvere
+        DOB: 05/22/1993
+        Email: Email: jay+patientNyneave1@studiolabs.com
+    f.  First Name: Patient
+        Last Name: Change
+        DOB: 08/01/1969
+        Email: Email: jay+patientChange1@studiolabs.com
+
 
 
 GOTCHAS
