@@ -4,13 +4,16 @@
  *                   variables (mablInputs.variables.user)
  * @param {function} callback - The callback function
  */
-function mablJavaScriptStep(mablInputs, callback) {
-  // create a new Date object
-  let today = new Date();
 
-  // get the string representation of the date and time
-  let finalDateTime = today.toLocaleString();
+ // returns in format '11/13/2020, 4:09:11 PM'
+function mablJavaScriptStep(mablInputs, callback) {
   
-  // perform the callback with the result
-  callback(finalDateTime);
+// create a new Date object
+let today = new Date();
+
+// get the string representation of the date and time
+let finalDateTime = today.toLocaleString();
+  
+// perform the callback with the result
+callback(finalDateTime);
 }

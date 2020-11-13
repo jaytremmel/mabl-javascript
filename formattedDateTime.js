@@ -1,5 +1,3 @@
-
-
 /**
  * Creates a date formatted month/day/year from a start date and a number of days to adjust that by.
  *      startDate defaults to today if no value is provided.
@@ -20,6 +18,7 @@
  */
 
 function mablJavaScriptStep(mablInputs, callback) {
+    
 
     /*
      * Adds a method to all "Date" objects in this scope 
@@ -61,45 +60,35 @@ function mablJavaScriptStep(mablInputs, callback) {
     // Format the date how it needs to be output
     let formattedDate = `${month}/${day}/${year}`;
 
- // Creates a time formatted *:**" "(am/pm) from a start date and a number of days to adjust that by.
-
-    // Variables for time output
-    var date_format = '12'; /* FORMAT CAN BE 12 hour (12) OR 24 hour (24)*/ 
-    var d       = new Date();
-    var hour    = d.getHours();  /* Returns the hour (from 0-23) */
-    var minutes     = d.getMinutes();  /* Returns the minutes (from 0-59) */
+    // get time and format
+    var d            = new Date();
+    var hour         = d.getHours();  /* Returns the hour (from 0-23) */
+    var minutes      = d.getMinutes();  /* Returns the minutes (from 0-59) */
     var currentTime  = hour;
-    var ext     = '';
-
-
-    if(date_format == '12'){
-        if(hour > 12){
-            ext = 'PM';
-            hour = (hour - 12);
+    var ext          = '';
     
-            if(hour < 10){
-                currentTime = "0" + hour;
-            }else if(hour == 12){
-                hour = "12";
-                ext = 'AM';
-            }
-        }
-        else if(hour < 12){
-            currentTime = ((hour < 10) ? "0" + hour : hour);
-            ext = 'AM';
-        }else if(hour == 12){
-            ext = 'PM';
-        }
+        if(hour < 12){
+        ext = 'AM';
     }
-    
-    if(minutes < 10){
+        if(hour >= 12){
+        ext = 'PM';
+        hour = (hour - 12);
+    }
+        if(hour === 0){
+        hour = "12";
+        ext = 'AM';
+    }
+        if(hour < 10){
+        hour = "0" + hour;
+    }
+        if(minutes < 10){
         minutes = "0" + minutes; 
     }
-    
-    currentTime = hour + ":" + minutes + ' ' + ext;
-
+        currentTime = hour + ":" + minutes + " " + ext
+        
+    //date and time together for output
     let formattedDateTime = formattedDate + " " + currentTime;
-
-// Pass the formattedDate back to mabl
+    
+    // Pass the formattedDate back to mabl
     callback(formattedDateTime);
 }

@@ -17,14 +17,14 @@
  *                   variables (mablInputs.variables.user)
  * @param {function} callback - The callback function
  */
+
+
+// requires formattedDateTime from Mabl mablInputs
 function mablJavaScriptStep(mablInputs, callback) {
   
+// format 
+var currentDTForm = formattedDateTime.replace(",", "").replace(/:[^:]*$/,'');
   
-  // format
-
-  var currentDTForm = formattedDateTime.replace(",", "").replace(/:[^:]*$/,'');
-  
-  
-  // perform the callback with the result
-  callback(currentDTForm);
+// perform the callback with the result
+callback(currentDTForm);
 }

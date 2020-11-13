@@ -18,8 +18,8 @@ STEPS
 ---------------------
 
 1. Ensure a group admin exists with the following creds
-    a.  First Name: TestOwner
-        Last Name: Mabl1
+    a.  First Name: Mabl
+        Last Name: Owner
         UserName: TestOwnerMabl1
         DisplayName: TestOwnerMabl1
         email: jay+testownermabl@studiolabs.com
@@ -80,28 +80,32 @@ STEPS
 4. Create new patients:
     a.  First Name: Rand
         Last Name: Althor
-        DOB: 01/01/1989
-        Email: jay+patientRand1@studiolabs.com
+        DOB: 01/01/1980
+        Email: jay+mablrand@studiolabs.com
     b.  First Name: Perrin
         Last Name: Aybarra
-        DOB: 10/25/1987
-        Email: jay+patientPerrin1@studiolabs.com
+        DOB: 02/02/1992
+        Email: jay+patientPerrintest@studiolabs.com
     c.  First Name: Mat
         Last Name: Cauthon
-        DOB: 09/17/1990 
-        Email: Email: jay+patientMat1@studiolabs.com
-    d.  First Name: Nyneave
-        Last Name: Almeara
-        DOB: 07/28*/1986 
-        Email: Email: jay+patientNyneave1@studiolabs.com
-    e.  First Name: Egwene
+        DOB: 03/03/1993 
+        Email: Email: jay+mablmatt@studiolabs.com
+    d.  First Name: Egwene
         Last Name: Alvere
-        DOB: 05/22/1993
-        Email: Email: jay+patientNyneave1@studiolabs.com
+        DOB: 04/04/1994
+        Email: Email: jay+mablegwene@studiolabs.com
+    e.  First Name: Nynaeve
+        Last Name: Almeara
+        DOB: 05/05/1995 
+        Email: Email: jay+mablnynaeve@studiolabs.com
     f.  First Name: Patient
         Last Name: Change
-        DOB: 08/01/1969
-        Email: Email: jay+patientChange1@studiolabs.com
+        DOB: 06/06/1996
+        Email: Email: jay+mablpatient@studiolabs.com
+    g.  First Name: Password
+        Last Name: ChangeTest
+        DOB: 07/07/1997
+        Email: Email: jay+mablpassword@studiolabs.com
 
 
 

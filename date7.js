@@ -61,6 +61,6 @@ function mablJavaScriptStep(mablInputs, callback) {
     // Format the date how it needs to be output
     let formattedDate = `${month}/${day}/${year}`;
 
-    // Pass the formattedDate back to mabl
+    // Pass the formattedDate back to mabl in format '11/20/2020'
     callback(formattedDate);
 }
